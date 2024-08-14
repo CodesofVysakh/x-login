@@ -25,10 +25,10 @@ function Login() {
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <p>{errorMessage}</p>
                     <div className="inputContainer">
-                        <label htmlFor="username">Username:</label>
+                        <label htmlFor="Username">Username:</label>
                         <input
                             type="text"
-                            name="username"
+                            name="Username"
                             placeholder="username"
                             // value={username}
                             onChange={(e) => setUsername(e.target.value)}
@@ -36,10 +36,10 @@ function Login() {
                         />
                     </div>
                     <div className="inputContainer">
-                        <label htmlFor="password">Password:</label>
+                        <label htmlFor="Password">Password:</label>
                         <input
                             type="password"
-                            name="password"
+                            name="Password"
                             placeholder="password"
                             // value={password}
                             onChange={(e) => setPassword(e.target.value)}
