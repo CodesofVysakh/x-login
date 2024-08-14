@@ -3,3 +3,24 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+.flexBox{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.flexBox form{
+	display: flex;
+	flex-direction: column;
+}
+
+button{
+	width: fit-content;
+	padding: 0 8px;
+}
+
+h3{
+	font-size: 32px;
+	margin-bottom: 10px;
+}

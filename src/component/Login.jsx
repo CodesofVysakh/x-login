@@ -16,7 +16,7 @@ function Login() {
         }
     }
     return (
-        <div>
+        <div className="flexBox">
             <h3>Login Page</h3>
             {
                 isShow ?
@@ -24,24 +24,28 @@ function Login() {
                 :
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <p>{errorMessage}</p>
-                    <label htmlFor="username">Username:</label>
-                    <input
-                        type="text"
-                        name="username"
-                        placeholder="username"
-                        // value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        required
-                    />
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="password"
-                        // value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
+                    <div className="inputContainer">
+                        <label htmlFor="username">Username:</label>
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="username"
+                            // value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="inputContainer">
+                        <label htmlFor="password">Password:</label>
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="password"
+                            // value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
                     <button type="submit">Submit</button>
                 </form>
             }
