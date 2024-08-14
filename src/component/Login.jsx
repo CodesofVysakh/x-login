@@ -7,7 +7,7 @@ function Login() {
     const [errorMessage, setErrorMessage] = useState("");
     const handleSubmit = (event) => {
         event.preventDefault();
-        if(username == "user" && password == "password"){
+        if(username === "user" && password === "password"){
             setIsShow(true);
             setErrorMessage("");
         }else{
