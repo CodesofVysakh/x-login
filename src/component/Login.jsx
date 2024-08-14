@@ -20,12 +20,12 @@ function Login() {
             <h3>Login Page</h3>
             {
                 isShow ?
-                <div>Welcome {username}!</div>
+                <div>Welcome, user!</div>
                 :
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <p>{errorMessage}</p>
                     <div className="inputContainer">
-                        <label htmlFor="Username">Username:</label>
+                        <label htmlFor="Username">Username</label>:
                         <input
                             type="text"
                             name="Username"
@@ -36,7 +36,7 @@ function Login() {
                         />
                     </div>
                     <div className="inputContainer">
-                        <label htmlFor="Password">Password:</label>
+                        <label htmlFor="Password">Password</label>:
                         <input
                             type="password"
                             name="Password"
